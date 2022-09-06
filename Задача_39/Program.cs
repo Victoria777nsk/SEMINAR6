@@ -13,11 +13,13 @@ ReversArray1(array);
 Console.WriteLine("ReversArray1: " + String.Join(" ", array));
 Console.WriteLine();
 
-ReversArray2(array);
-Console.WriteLine("ReversArray2: " + String.Join(" ", array));
+Console.WriteLine("Array " + String.Join(" ", array));
+int[] reversArray = ReversArray2(array);
+Console.WriteLine("ReversArray2: " + String.Join(" ", reversArray));
 Console.WriteLine();
 
-ReversArray3(array);
+Console.WriteLine("Array " + String.Join(" ", reversArray));
+ReversArray3(reversArray);
 Console.WriteLine("ReversArray3: " + String.Join(" ", array));
 
 
